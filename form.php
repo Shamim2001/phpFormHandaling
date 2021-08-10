@@ -77,7 +77,7 @@ include_once 'function.php';
                     <label>Select Some fruits</label>
 
                     <div>
-                        <input type="checkbox" name="fruits[]" value="orange" <?php isChecked('fruits', 'orange') ?> >
+                        <input type="checkbox" name="fruits[]" value="orange" <?php isChecked('fruits','orange') ?> >
                         <label class="label-inline" >Orange</label> <br/>
                         <input type="checkbox" name="fruits[]" value="mango" <?php isChecked('fruits', 'mango') ?> >
                         <label class="label-inline" >Mango</label> <br/> 
