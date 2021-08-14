@@ -1,7 +1,12 @@
 <?php
 
-function displayOptions($options) {
+function displayOptions($options, $selectedValues   ) {
     foreach ($options as $option) {
-        printf("<option value='%s' >%s</option> \n", strtolower($option), ucwords($option));
+        $option = strtolower($option);
+        $selected = '';
+        if ( in_array($option, $selectedValues ) ) {
+            $selected = "selected";
+        }
+        printf("<option value='%s' %s>%s</option> \n", $option, $selected, ucwords($option) );
     }
 }
